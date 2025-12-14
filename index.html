@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liam | Portfolio Design</title>
+    <meta name="description" content="Portfolio UX/UI Designer" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Config Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0f172a',
+              secondary: '#475569',
+              accent: '#3b82f6',
+              bg: '#ffffff',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="antialiased bg-white text-primary selection:bg-accent selection:text-white">
+
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-40 border-b border-gray-100 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <a href="#" class="font-display text-2xl font-bold tracking-tighter">
+          liam<span class="text-accent">.</span>
+        </a>
+        
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
+          <a href="#projects" class="hover:text-primary transition-colors">Projets</a>
+          <a href="#about" class="hover:text-primary transition-colors">À propos</a>
+        </div>
+
+        <a href="mailto:contact@liam.design" class="px-6 py-2.5 bg-primary text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-all hover:scale-105">
+          Me contacter
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="pt-32 pb-20 px-6 max-w-7xl mx-auto min-h-[80vh] flex flex-col justify-center">
+      <div class="space-y-8 max-w-3xl">
+        
+        <!-- Profile Picture -->
+        <div class="flex items-center gap-4 mb-4">
+            <img src=./image/photo_profil.png 
+                 alt="Liam Profile" 
+                 class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover ring-4 ring-gray-50 shadow-xl" />
+            
+        </div>
+        
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight">
+          Créer des interfaces qui ont du <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-600">sens.</span>
+        </h1>
+        
+        <p class="text-xl text-gray-500 max-w-lg leading-relaxed font-light">
+          Je suis Liam, UX/UI Designer. 
+        </p>
+        
+        <div class="flex items-center gap-6 pt-4">
+          <a href="#projects" class="group flex items-center gap-2 border-b-2 border-primary pb-1 text-primary font-bold hover:text-accent hover:border-accent transition-all">
+            Voir mes projets 
+            <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+<!-- ABOUT -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2 class="font-display text-3xl font-bold">Qui suis-je ?</h2>
+        <p class="text-xl md:text-2xl text-gray-600 font-light leading-relaxed">
+          
+          Je suis étudiant en troisième année de BUT Métiers du Multimédia et de l’Internet à l’IUT de Meaux, spécialisé en design UI/UX. J’aime concevoir des interfaces claires, ergonomiques et centrées sur l’utilisateur, en mêlant réflexion, créativité et contraintes techniques.
+
+<br><br>À travers mes projets, j’ai travaillé sur la création de maquettes, de chartes graphiques et d’assets pour différents types de sites. J’adopte une approche basée sur l’itération, la recherche de références et le prototypage, en utilisant des outils comme Figma. Le dessin fait aussi partie de mon processus : poser mes idées sur papier m’aide à avancer plus vite et à mieux les partager avec les développeurs.
+
+<br><br>Curieux et investi, j’accorde une grande importance à la collaboration et à la cohérence entre design, expérience utilisateur et faisabilité technique.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
+          <div class="p-4 bg-gray-50 rounded-2xl">
+            <div class="text-accent mb-2"><i data-lucide="pen-tool" class="mx-auto"></i></div>
+            <div class="font-bold">UI Design</div>
+          </div>
+          <div class="p-4 bg-gray-50 rounded-2xl">
+            <div class="text-accent mb-2"><i data-lucide="users" class="mx-auto"></i></div>
+            <div class="font-bold">UX Research</div>
+          </div>
+          <div class="p-4 bg-gray-50 rounded-2xl">
+            <div class="text-accent mb-2"><i data-lucide="layers" class="mx-auto"></i></div>
+            <div class="font-bold">Design Systems</div>
+          </div>
+          <div class="p-4 bg-gray-50 rounded-2xl">
+            <div class="text-accent mb-2"><i data-lucide="smartphone" class="mx-auto"></i></div>
+            <div class="font-bold">Prototyping</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (BENTO GRID) -->
+    <section id="projects" class="py-24 px-6 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 flex justify-between items-end">
+          <h2 class="font-display text-4xl font-bold">Sélection de travaux</h2>
+          <span class="hidden md:block text-gray-400 text-sm">2023 — 2025</span>
+        </div>
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[350px]">
+          
+          <!-- Item 1: Large Vertical -->
+          <div onclick="window.openProject(0)" class="group md:col-span-1 md:row-span-2 relative bg-white rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+            <img src=./image/STAGE_MP.png class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 1">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+            <div class="absolute bottom-0 left-0 p-8 text-white">
+              <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">UX.UI/3D</span>
+              <h3 class="font-display text-3xl font-bold">Stage 2eme Année</h3>
+            </div>
+            <div class="absolute top-6 right-6 bg-white/20 backdrop-blur-md p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <i data-lucide="arrow-up-right" class="text-white w-5 h-5"></i>
+            </div>
+          </div>
+
+          <!-- Item 2: Wide -->
+          <div onclick="window.openProject(1)" class="group md:col-span-2 relative bg-white rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+            <img src="./image/GE_P1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 2">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+            <div class="absolute bottom-0 left-0 p-8 text-white">
+              <span class="text-gray-200 text-xs font-bold uppercase tracking-wider mb-2 block">UI.UX.Prototypage</span>
+              <h3 class="font-display text-2xl font-bold">Greener Earth</h3>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div onclick="window.openProject(2)" class="group relative bg-white rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+            <img src="./image/ACW_P1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 3">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+            <div class="absolute bottom-0 left-0 p-8 text-white">
+              <h3 class="font-display text-2xl font-bold">Accessware</h3>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div onclick="window.openProject(3)" class="group relative bg-white rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+            <img src="./image/DIVERS_1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 4">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+            <div class="absolute bottom-0 left-0 p-8 text-white">
+              <h3 class="font-display text-2xl font-bold">Divers</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-gray-100 bg-white text-center">
+      <div class="max-w-7xl mx-auto px-6">
+        <a href="mailto:cheurfaliam@gmail.com" class="font-display text-4xl md:text-6xl font-bold hover:text-accent transition-colors">
+          cheurfaliam@gmail.com
+        </a>
+        <div class="flex justify-center gap-8 mt-12 text-gray-500">
+          <a href="https://www.linkedin.com/in/liam-cheurfa-040aa8292/" class="hover:text-primary transition-colors">LinkedIn</a>
+        </div>
+        <p class="mt-8 text-gray-400 text-sm">© 2025 Liam. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- MODAL (Hidden by default) -->
+    <div id="project-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+      
+      <!-- Backdrop -->
+      <div onclick="window.closeModal()" class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0 duration-300" id="modal-backdrop"></div>
+      
+      <!-- Content -->
+      <div id="modal-content" class="bg-white w-full max-w-5xl h-[85vh] rounded-2xl shadow-2xl overflow-hidden relative z-10 flex flex-col md:flex-row scale-95 opacity-0 transition-all duration-300">
+        
+        <!-- Close Button -->
+        <button onclick="window.closeModal()" class="absolute top-4 right-4 z-20 p-2 bg-white/50 backdrop-blur rounded-full hover:bg-white text-primary transition-all">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Left: Image -->
+        <div class="w-full md:w-1/2 h-64 md:h-full bg-gray-100 cursor-zoom-in group overflow-hidden">
+          <img id="modal-img" onclick="window.openLightbox(this.src)" src="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project Detail">
+        </div>
+
+        <!-- Right: Content -->
+        <div class="w-full md:w-1/2 p-8 md:p-12 overflow-y-auto">
+          <div class="space-y-6">
+            <div>
+              <span id="modal-category" class="text-accent text-xs font-bold uppercase tracking-widest">Category</span>
+              <h2 id="modal-title" class="font-display text-4xl font-bold mt-2 text-primary">Title</h2>
+            </div>
+
+            <div id="modal-tags" class="flex flex-wrap gap-2">
+              <!-- Tags injected via JS -->
+            </div>
+
+            <div class="w-12 h-1 bg-gray-100"></div>
+
+            <p id="modal-desc" class="text-gray-600 leading-relaxed text-lg font-light">
+              Description...
+            </p>
+
+            <div class="pt-8">
+              <h3 class="font-bold mb-4 text-sm uppercase tracking-wider">Aperçu</h3>
+              <div id="modal-gallery" class="grid grid-cols-2 gap-3">
+                <!-- Gallery injected via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX (Hidden by default) -->
+    <div id="lightbox-modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div onclick="window.closeLightbox()" class="fixed inset-0 bg-black/95 backdrop-blur-md transition-opacity duration-300" id="lightbox-backdrop"></div>
+        
+        <!-- Image Container -->
+        <div class="relative z-70 max-w-full max-h-screen p-4">
+             <button onclick="window.closeLightbox()" class="absolute -top-12 right-0 p-2 text-white/70 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-8 h-8"></i>
+             </button>
+             <img id="lightbox-img" src="" class="max-h-[85vh] md:max-h-[90vh] max-w-full rounded-md shadow-2xl object-contain scale-95 opacity-0 transition-all duration-300" />
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

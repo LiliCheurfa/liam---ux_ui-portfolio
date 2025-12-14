@@ -1,0 +1,21 @@
+/* Reset & Base */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll Lock quand la modale est ouverte */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera in Modal if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

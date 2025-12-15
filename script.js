@@ -4,7 +4,7 @@ const projects = [
     title: "Stage 2eme Année",
     category: "UX.UI/3D",
     img: "./image/STAGE_MP.png",
-    desc: " Durant ce stage, j’ai réalisé la maquette de la partie paywall d’une application mobile nommée HeyChef!. Ce projet m’a amené à proposer plusieurs pistes de design en travaillant par itération, afin d’affiner l’interface et l’expérience utilisateur en fonction des retours. En parallèle, j’ai également participé à la conception de spectacles de drones sur Blender, en animant des objets et en programmant le déplacement des drones pour qu’ils suivent précisément ces formes. Ces travaux m’ont permis de développer à la fois ma rigueur technique et ma créativité sur des projets aux formats variés.",
+    desc: " Durant ce stage, j’ai réalisé la maquette de la partie paywall d’une application mobile nommée HeyChef!. Ce projet m’a amené à proposer plusieurs pistes de design en travaillant par itération, afin d’affiner l’interface et l’expérience utilisateur en fonction des retours. Cela a pu être utilisé pour l'application qui est encore en cours de développement. En parallèle, j’ai également participé à la conception de spectacles de drones sur Blender, en animant des objets et en programmant le déplacement des drones pour qu’ils suivent précisément ces formes. Ces travaux m’ont permis de développer à la fois ma rigueur technique et ma créativité sur des projets aux formats variés.",
     tags: ["UX Research", "Figma", "3D Blender", "3D Animation"],
     gallery: ["./image/STAGE_P1.png", "./image/STAGE_P2.png", "./image/STAGE_P3.png", "./image/STAGE_P4.png", "./image/STAGE_P5.png", "./image/STAGE_P6.png"]
   },
@@ -27,10 +27,10 @@ const projects = [
   {
     title: "Divers",
     category: "Graphisme/Dessin",
-    img: "./image/DIVERS_3.png",
+    img: "./image/DIVERS_1.png",
     desc: "Cette section regroupe une compilation de différents travaux liés au graphisme que j’ai réalisés. Elle met en lumière mon évolution, notamment à travers l’utilisation de la 3D pour la création de publicités Instagram, comme celles réalisées pour Displate. Je souhaite également montrer que ma palette créative s’étend au dessin, une pratique que je poursuis encore aujourd’hui. Elle me permet de stimuler ma créativité et de réaliser des brouillons de maquettes sur papier, servant de base à la conception de futurs sites web.",
     tags: ["3D/Blender", "Photoshop", "InDesign","Procreate"],
-    gallery: ["./image/DIVERS_2.png", "./image/DIVERS_1.png", "./image/DIVERS_4.png", "./image/DIVERS_5.png", "./image/DIVERS_6.png"]
+    gallery: ["./image/DIVERS_2.png", "./image/DIVERS_4.png", "./image/DIVERS_5.png", "./image/DIVERS_6.png"]
   }
 ];
 
